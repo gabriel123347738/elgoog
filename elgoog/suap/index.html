@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SUAP</title>
+	<link rel="stylesheet" type="text/css" href="Suap.css">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: #656565;
+		}
+		.header{
+			display: flex;
+			flex-direction: row;
+			widows: 100%;
+			height: 50px;
+			/*background-color:blue ;*/
+		}
+		/*---------------------------*/
+		.corpo{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: 600px;
+		}
+		/*---------------------------*/
+		.corpo-left{
+			display: flex;
+			padding-top: 50px;
+			flex-direction: column;
+			align-items:center ;
+			width: 25%;
+			height: 700px;
+			background-color: #484848;
+		}
+		.corpo-left-img{
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			/*background-color: chartreuse;*/
+		}
+		.corpo-left-img img{
+			height: 40px;
+		}
+		.corpo-left-ul{
+			padding-top: 15px;
+			display: flex;
+			width: 90%;
+			/*background-color: navajowhite;*/
+		}
+		.corpo-left-ul li{
+			color: white;
+			list-style: none;
+		}
+		.corpo-left-ul-titulos{
+			font-size: 16px;
+			padding-bottom: 4px;
+		}
+		.corpo-left-ul-barra{
+			border-bottom: solid 1px;
+			font-size: 14px;
+			border-color: darkgrey;
+		}
+		.corpo-left-ul-subtitulos{
+			font-size: 14px;
+			padding-bottom: 4px;
+		}
+		/*---------------------------*/
+		.separa1{
+			display: flex;
+			flex-direction: row;
+			width: 10%;
+		}
+		/*---------------------------*/
+		.corpo-right{
+			display: flex;
+			background-color: ;
+			justify-content: center;
+			align-items: center;
+			width: 70%;
+			height: 600px;
+		}
+		.corpo-right-container{
+			display: flex;
+			background-color: white;
+			flex-direction: column;
+			width: 45%;
+			height: 500px;
+			border: solid 3px;
+			border-radius: 10px;
+			border-color: white;
+		}
+		.corpo-right-container-img{
+			display: flex;
+			/*background-color: gainsboro;*/
+			justify-content: center;
+		}
+		.corpo-right-container-form{
+			display: flex;
+			padding-top: 60px;
+			justify-content: center;
+		}
+		.corpo-right-container-form-text{
+			border: none;
+			border-bottom: solid 1px;
+		}
+		.corpo-right-container-form-text:hover{
+			background-color: lightyellow;
+		}
+		.corpo-right-container-form p{
+			font-size: 1rem;
+		}
+		.corpo-right-container-form input{
+			width:300px;
+			height:35px;
+		}
+		.corpo-left-container-form-botao-div{
+			padding-top: 20px;
+			display: flex;
+		}
+		#corpo-right-container-form-botao{
+			background-color: #25a25a;
+			border-radius: 20px;
+			height: 40px;
+			color: white;
+			border: none;
+		}
+		#corpo-right-container-form-botao:hover{
+			background-color: #0dbd56;
+		}
+		.corpo-right-container-p2{
+			display: flex;
+			padding-top: 15px;
+			padding-right:15px;
+			font-size: 13px;
+			justify-content: flex-end;
+			color: #347b3e;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="corpo">	
+
+		
+		<div class="corpo-left">
+
+			<div class="corpo-left-img">
+				<img src="if.png">
+			</div>
+
+			<div class="corpo-left-ul">
+				<ul>
+					<li class="corpo-left-ul-titulos">ACESSOS</li>
+					<li class="corpo-left-ul-subtitulos">Login</li>
+					<li class="corpo-left-ul-subtitulos">Alterar Senha</li>
+					<li class="corpo-left-ul-barra">Acesso Responsavel</li>
+				</ul>
+			</div>
+
+			<div class="corpo-left-ul">
+				<ul>
+					<li class="corpo-left-ul-titulos">AUTENTICAÇÃO DE DOCUMENTOS</li>
+					<li class="corpo-left-ul-subtitulos">Documentos Gerais</li>
+					<li class="corpo-left-ul-subtitulos">Assinaturas Digitais</li>
+					<li class="corpo-left-ul-barra">Certificados de Minicursos</li>
+				</ul>
+			</div>
+
+			<div class="corpo-left-ul">
+				<ul>
+					<li class="corpo-left-ul-titulos">AVALIAÇÕES</li>
+					<li class="corpo-left-ul-subtitulos">Avaliação de Estágio</li>
+					<li class="corpo-left-ul-barra">Avaliação Integrada</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!--  -->
+		<div class="separa1">  </div>
+		<!--  -->
+
+			<div class="corpo-right">
+
+				<div class="corpo-right-container">
+					
+					<div class="corpo-right-container-img">
+						<img src="suap.png">
+					</div>
+
+					<div class="corpo-right-container-form">
+						<form>
+							<p> Usuario </p>
+							<input class="corpo-right-container-form-text" type="text" name="">
+
+							<p> Senha </p>
+							<input class="corpo-right-container-form-text" type="text" name="">
+
+							<br>
+							<div class="corpo-left-container-form-botao-div">
+								 <input id="corpo-right-container-form-botao" type="submit" name="">
+							</div>
+						</form>
+					</div>
+
+					<div class="corpo-right-container-p2">
+						<p>Esqueceu ou deseja Recuperar senha?</p>
+					</div>
+
+				</div>			
+
+			</div>
+	<!-- </div> -->
+			
+	</div> <!-- fim da classe corpo -->
+
+
+</body>
+</html>

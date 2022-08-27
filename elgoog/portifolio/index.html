@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/jpg" href="fotos/favicon.ico"/>
+	<title>Portifolio</title> 
+	<style> 
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		/*Pagina 1*/
+		.corpo1{ 
+			background-image: url(fotos/header-bg.jpg);
+			background-position: center;
+			background-size: 100%;
+			background-repeat: none;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 800px;
+			justify-content: center;
+			align-items: center;
+		}
+		.corpo1-img{
+			display: flex;
+			width: 100% 	
+		}
+		.corpo1-h2 h2{
+			color: white;
+			font-size: 2rem;
+		}
+		.corpo1-h1{
+			padding-top: 10px;
+			padding-bottom: 40px;
+		}
+		.corpo1-h1 h1{
+			color: white;
+			font-size: 4rem;
+		}
+		.corpo1-input{
+			display: flex;
+		}
+
+		#corpo1-input-submit{
+			background-color: #ffc800;
+			width: 220px;
+			height: 70px;
+			border-radius: 9px;
+			color: white;
+			border: none;
+			font-size: 20px;
+		}
+		#corpo1-input-submit:hover{ 	
+			background-color:#fd7e14;;
+		}
+		/*-------------------------------*/
+
+
+
+		/*Pagina 2*/
+		.corpo2{
+			padding-top: 100px;
+			display: flex;
+			width: 100%;
+			height: 500px;
+			flex-direction: column;
+		}
+		.corpo2-header{
+			display: flex;
+			width: 100%;
+			height: 200px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.corpo2-header-h1 h1{
+			font-size: 3rem;
+		}
+		.corpo2-header-p{
+			opacity: 50%;
+			padding-top: 20px;
+			padding-bottom: 50px;
+			font-size: 20px;
+			font-style: italic;
+		}
+		.corpo2-corpo{
+			display: flex;
+			width: 100%;
+			height: 700px;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		.corpo2-corpo-left{
+			display: flex;
+			padding-left: 10px;
+			width: 30%;	
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.corpo2-corpo-left img{
+			height: 150px;
+		}
+
+		.corpo2-corpo-center{
+			display: flex; 	
+			padding-left: 10px;
+			width: 30%;	
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;	
+		}
+		.corpo2-corpo-center img{
+			height: 150px;
+		}
+		.corpo2-corpo-right{
+			display: flex;
+			padding-left: 10px;
+			width: 30%;	
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;	
+		}
+		.corpo2-corpo-right img{
+			height: 150px;
+		}
+		.corpo2-corpo-p{
+			opacity: 50%;
+			text-align: center;
+			padding-top: 15px;
+		}
+		/*-------------------------------*/
+
+
+
+		/*Pagina 3*/
+		.corpo3{
+			padding-top: 100px;
+			background-color: #f8f9fa;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 900px
+		}
+		.corpo3-header{
+			display: flex;
+			width: 100%;
+			height: 100px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.corpo3-header-h1{
+			font-size: 25px;
+		}
+		.corpo3-header-p{
+			padding-top: 15px;
+			opacity: 50%;
+			font-style: italic;
+			display: flex;
+			font-size: 20px;
+		}
+		.corpo3-corpo{
+			display: flex;
+			width: 100%;
+			height: 800px;
+			padding-top: 40px;
+			justify-content: center;
+			align-items: center;
+		}
+		.corpo3-corpo-grid{
+			display: grid;
+			grid-template-columns: 400px 400px 400px;
+			grid-template-rows: 400px;
+		}
+		.corpo3-corpo-grid-painel{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			background-color: #ffffff;
+			width: 80%;
+			height: 300px;
+
+		}
+		.corpo3-corpo-grid-painel img{
+			width: 100%;
+			height: 220px;
+		}
+		.corpo3-corpo-grid-painel p{
+			opacity: 50%;
+			font-style: italic;
+		}
+		/*-------------------------------*/
+
+
+
+		/*Pagina 4*/
+		.corpo4{
+			background-image: url(fotos/map-image.png);
+			background-repeat: no-repeat;
+			background-color: #212529;
+			background-position: center;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 700px;
+		}
+
+		.corpo4-header{
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+			height: 300px;
+		}
+		.corpo4-header-h1{
+			color: white;
+			font-size: 25px;
+		}
+		.corpo4-header-h2{
+			padding-top: 20px;
+			color: white;
+			font-style: italic;
+			opacity: 50%;
+			font-size: 15px;
+		}
+
+		.corpo4-corpo-afasta{
+			display: flex;
+			width: 100%;
+			height: 80px;
+		}
+
+		.corpo4-corpo-corpo{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			height: 800px;
+		}
+
+		.div-corpo4-corpo-container{
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+		}
+
+		.corpo4-corpo-container{
+			display: flex;
+			width: 100%;
+			height: 380px;
+			justify-content: center;
+		}
+
+		.corpo4-corpo-container-left{
+			display: flex;
+			width: 50%;
+			justify-content: center;
+			padding-right: 15px;
+			flex-direction: column;
+		}
+		.corpo4-corpo-container-left-input{
+			padding-bottom: 40px ;
+			display: flex;
+			justify-content: flex-end;
+		}
+		.corpo4-corpo-container-left-text{
+			width: 500px;
+			height: 65px;
+			border-radius: 8px;
+		}
+
+		.corpo4-corpo-container-right{
+			display: flex;
+			width: 50%;
+			padding-left: 15px;
+			align-items: center;
+		}
+		.corpo4-corpo-container-right-input{
+			display: flex;
+			width: 100%;
+			height: 325px;
+			justify-content: flex-start;
+		}
+		.corpo4-corpo-container-right-text{
+			width: 80%;
+			height: 86%;
+			border-radius: 8px;
+		}
+		.corpo4-corpo-container-input{
+			display: flex;
+			justify-content: center;
+		}
+		.corpo4-corpo-container-submit{
+			width: 15%;
+			height: 60px;
+			background-color:#ffc800;
+			border-radius: 7px;
+			border:  none;
+			color: white;
+			font-size: 1rem;
+		}
+		.corpo4-corpo-container-submit:hover{
+			background-color:#fd7e14;
+		}
+
+		/*Final*/
+	</style> 
+</head>
+<body>
+
+	<div class="corpo1">
+	
+		<div class="corpo1-h2">
+			<h2> Welcome To Our Studio! </h2>
+		</div>
+
+		<div class="corpo1-h1">
+			<h1> IT'S NICE TO MEET YOU </h1>
+		</div>
+		
+		<div class="corpo1-input">
+			<input id="corpo1-input-submit" type="submit" value="TELL ME MORE">
+		</div>
+
+	</div>
+
+
+	<div class="corpo2">
+		
+		<div class="corpo2-header">
+			<div class="corpo2-header-h1">
+				<h1>SERVICES</h1>
+			</div>
+
+			<div class="corpo2-header-p">
+				<p>Lorem ipsum dolor sit amet consectetur.</p>
+			</div>
+		</div>
+
+		<div class="corpo2-corpo">
+			
+			<div class="corpo2-corpo-left">
+				
+				<div class="corpo2-corpo-img">
+					<img src="fotos/carrinho.png">
+				</div>
+
+				<div class="corpo2-corpo-h1">
+					<h1>E-Commerce</h1>
+				</div>
+
+				<div class="corpo2-corpo-p">
+					<p>E-Commerce
+					Lorem ipsum dolor sit amet, 
+					consectetur adipisicing elit. Minima maxime quam architecto quo 
+					inventore harum ex magni, dicta impedit.
+					</p>
+				</div>
+
+			</div>
+
+
+			<div class="corpo2-corpo-center">
+				
+				<div class="corpo2-corpo-img">
+					<img src="fotos/laptop.png">
+				</div>
+
+				<div class="corpo2-corpo-h1">
+					<h1>Responsive Design</h1>
+				</div>
+
+				<div class="corpo2-corpo-p">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedi
+					</p>
+				</div>
+
+			</div>
+
+			<div class="corpo2-corpo-right">
+				
+				<div class="corpo2-corpo-img">
+					<img src="fotos/cadeado.png">
+				</div>
+
+				<div class="corpo2-corpo-h1">
+					<h1>Web Security</h1>
+				</div>
+
+				<div class="corpo2-corpo-p">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore 
+					harum ex magni, dicta impedit.
+					</p>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+
+	<div class="corpo3">
+
+		<div class="corpo3-header">
+			
+			<div class="corpo3-header-h1">
+				<h1>PORTFOLIO</h1>
+			</div>
+
+			<div class="corpo3-header-p">
+				<p> Lorem ipsum dolor sit amet consectetur. </p>
+			</div>
+
+		</div>
+
+		<div class="corpo3-corpo">
+			
+			<div class="corpo3-corpo-grid">
+
+				<div class="corpo3-corpo-grid-painel">
+				<img src="fotos/miBand.jpg">
+				<h1>Threades</h1>
+				<p> Ilustration </p>
+				</div>
+				
+				<div class="corpo3-corpo-grid-painel">
+				<img src="fotos/tenis.jpg">
+				<h1>Explore</h1>
+				<p> Graphic Designer </p>
+				</div>
+
+				<div class="corpo3-corpo-grid-painel">
+				<img src="fotos/vrum.jpg">
+				<h1>Finish</h1>
+				<p> Identity</p>
+				</div>
+
+				<div class="corpo3-corpo-grid-painel">
+				<img src="fotos/geladinha.png">
+				<h1>Lines</h1>
+				<p> Branding </p>
+				</div>
+
+				<div class="corpo3-corpo-grid-painel">
+				<img src="fotos/caro.webp">
+				<h1>Southwest</h1>
+				<p> Website Designer</p>
+				</div>
+
+				<div class="corpo3-corpo-grid-painel">
+				<img src="fotos/cheira.jpg">
+				<h1>Window</h1>
+				<p> Photography</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="corpo4">
+
+		<div class="corpo4-header">
+			<div class="corpo4-header-h1">
+				<h1>CONTACT US</h1>
+			</div>
+
+			<div class="corpo4-header-h2">
+				<h2>Lorem ipsum dolor sit amet consectetur.</h2>
+			</div>
+		</div>
+		
+		<div class="corpo4-corpo-afasta">
+		</div>
+
+			
+				<div class="corpo4-corpo-corpo">
+
+					<div class="div-corpo4-corpo-container">
+
+						<div class="corpo4-corpo-container">
+
+							<div class="corpo4-corpo-container-left">
+								
+								<div class="corpo4-corpo-container-left-input">
+									<input class="corpo4-corpo-container-left-text" type="text" placeholder="Your Name *">
+								</div>
+								<div class="corpo4-corpo-container-left-input">
+									<input class="corpo4-corpo-container-left-text" type="text" placeholder="Your Email *">
+								</div>
+								<div class="corpo4-corpo-container-left-input">
+									<input class="corpo4-corpo-container-left-text" type="text" placeholder="Your Phone *">
+								</div>
+
+							</div>
+
+
+							<div class="corpo4-corpo-container-right">
+								
+								<div class="corpo4-corpo-container-right-input">
+									<input class="corpo4-corpo-container-right-text" type="text" placeholder="Your Menssage *">
+								</div>
+
+							</div>
+
+						</div>
+
+					<div>
+
+				</div>
+
+					<div class="corpo4-corpo-container-input">
+						<input class="corpo4-corpo-container-submit" type="submit" value="SEND MESSAGE">
+					</div>
+
+			</div>
+
+		</div>
+
+</body>
+</html>
